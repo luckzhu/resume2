@@ -1,0 +1,182 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(239, 239, 239);
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navBar ul li {
+    list-style: none;
+    float: left;
+    font-size: 14px;    
+    margin: 33px 17px;
+}
+
+.navBar ul li a {
+    color: #b7b7b7;
+    font-weight: 600;
+    border-bottom: 3px solid #e8676b transparent;
+    padding-bottom: 4px;
+}
+
+.navBar ul li a:hover {
+    border-bottom: 3px solid #e8676b;
+    padding-bottom: 4px;
+}
+
+.rs {
+    color: #e8676b;
+}
+
+.card {
+    margin-left: 3px;
+    color:  #9a9da2;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Fredoka One";
+    margin: 30px 17px;
+}
+
+.navBar {
+    float: right;
+}
+
+.banner {
+    
+    height: 515px;
+    border: 1px solid #e8676b;
+    background-size: cover;
+    background-position: center center;
+}
+
+.topNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.mask {
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.userCard {
+    max-width: 940px;
+
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.hello {
+    background-color: #e8676b;
+    padding: 4px 16px;
+    display: inline-block;
+    line-height: 21px;
+    color: white;
+    position: relative;
+   
+}
+
+
+.trangle {
+    width: 0;
+    height: 0;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-top-width: 0px; 
+    position: absolute;
+    left: 10px;
+    top: 100%;
+}
+
+.photo {
+    float: left;
+}
+
+.textInfo {
+    float: left;
+    margin-left: 65px;
+    width: 470px;
+}
+
+.pictureAndText {
+    padding: 50px;
+}
+
+.textInfo h1 {
+    margin-top: 26px;
+}
+
+hr {
+    height: 0px;
+    border: none;
+    border-top: 1px solid #dedede;
+}
+
+.textInfo hr {
+    margin: 20px 0px;
+}
+
+.descriptionList dl dt,
+.descriptionList dl dd {
+    float: left;
+    padding: 5px 0;
+}
+
+.descriptionList dl dt {
+    width: 30%;
+    font-weight: bold;
+}
+
+.descriptionList dl dd {
+    width: 70%;
+    color: #9da0a7;
+}
+
+.redbar {
+    max-width: 940px;
+    background-color: #e8676b;
+    text-align: center;
+}
+
+.redbar svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+    vertical-align: top;
+    padding: 5px 0;
+}
+
+.redbar a {
+    display: inline-block;
+    border-radius: 100%;
+    width: 40px;
+   line-height: 30px;
+   margin: 16px;
+}
+
+.redbar a:hover {
+    display: inline-block;
+    border-radius: 100%;
+    width: 40px;
+   line-height: 30px;
+   background-color: #cf5d5f;
+}
