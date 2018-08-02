@@ -60,7 +60,6 @@ a {
 .banner {
     
     height: 515px;
-    border: 1px solid #e8676b;
     background-size: cover;
     background-position: center center;
 }
@@ -80,9 +79,10 @@ a {
 
 .userCard {
     max-width: 940px;
-
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #fff;
+    margin-top: -345px;
 }
 
 .hello {
@@ -181,4 +181,192 @@ hr {
     width: 40px;
    line-height: 30px;
    background-color: #cf5d5f;
+}
+
+.downButton {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.downButton a {
+    border: 1px solid rgb(203, 205, 207);
+    color: #3d4451;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 55px;
+    display: inline-block;
+    font-family: "思源黑体";
+}
+
+.downButton a:hover {
+    box-shadow: 0px 5px 18px -5px rgba(135,135,135,1);
+    transition: all 0.3s;
+}
+
+.downButton p {
+    max-width: 940px;
+    margin: 30px auto;
+    font-family: "楷体";
+    font-size: 20px;
+}
+
+
+
+.skills h2 {
+    color: #3d4451;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+}
+
+.skills ul {
+    padding: 30px 50px;
+}
+
+.skills ul li {
+    float: left;
+    list-style: none;
+    width: 50%;
+    padding-bottom: 34px;
+    box-sizing: border-box;
+}
+
+.bartitle {
+    margin-bottom: 4px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.skillBar {
+    /* border: 3px solid rgb(250, 225, 225); */
+    background-color: rgb(250, 225, 225);
+    border-radius: 4px;
+  
+}
+
+.skillBar .barLength {
+    height: 100%;
+    width: 50%;
+    border: 3px solid #e8676b;
+}
+
+.skills li:nth-child(5),
+.skills li:nth-child(6){
+   padding-bottom: 11px;
+}
+
+.allBar {
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 2px 4px 15px 0px rgba(125,125,125,1);
+}
+
+
+.skills ul li:nth-child(even) {
+    float: right;
+    padding-left: 30px;
+}
+
+.portfolio {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 77px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.portfolio li {
+    float: left;
+    list-style: none;
+    margin-left: 50px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+}
+
+.portfolio li:first-child{
+    margin-left: 0px;
+}
+
+.portfolio ul {
+    display: inline-block;
+    padding-bottom: 13px;
+    
+} 
+
+.category {
+    display: inline-block;
+}
+
+.whiteBar {
+    height: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+
+.whiteBar .threeRedBar {
+    height: 100%;
+    background-color: #cf5d5f;
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.whiteBar .threeRedBar.state1 {
+    width: 18%;
+    left: 0;
+    top: 0;
+}
+
+.whiteBar .threeRedBar.state2 {
+    width: 18%;
+    left: 74px;
+    top: 0;
+}
+
+.whiteBar .threeRedBar.state3 {
+    width: 31%;
+    left: 148px;
+    top: 0;
+}
+
+
+.portfolioPhoto {
+    margin-top: 30px;
+    height: 576px;
+    position: relative;
+}
+
+.portfolioPhoto .photo1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.portfolioPhoto .photo2{
+    position: absolute;
+    top: 0;
+    left: 645px;
+    
+}
+
+.portfolioPhoto .photo3{
+    position: absolute;
+    top: 298px;
+    left: 645px;
 }

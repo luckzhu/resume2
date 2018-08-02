@@ -127,74 +127,101 @@
     </div>
 
 
+    <div class="downButton">
+        <a href="./downlord/resume.txt" target="_blank" download>下载简历</a>
+        <p>无匣也无鞘，暗室夜常明。三尺木马牛，可折天下兵。欲知天将雨，铮铮发龙鸣。提剑走人间，百鬼夜遁行。飞过广陵江，八百蛟龙惊。世人不知何所求，那袭青衫放声笑：天不生我李淳罡，剑道万古如长夜！</p>
 
-    <a href="" target="_blank" download>下载简历</a>
-
-
-    <p>个人介绍</p>
-
-    <div class="skill">
-        <ul>
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            <li>PS</li>
-            <li>react</li>
-            <li>vue.js</li>
-        </ul>
     </div>
 
-    <div class="project">
-        <div class="classify">
-            <ul>
+
+
+    <div class="skills">
+        <h2>技能</h2>
+        <div class="allBar">
+            <ul class="clearfix">
                 <li>
-                    <a href="#">ALL</a>
+                    <div class="bartitle">HTML5 & CSS3</div>
+                    <div class="skillBar">
+                        <div class="barLength" style="width: 70%;"></div>
+                    </div>
+
                 </li>
                 <li>
-                    <a href="#">PHOTOGRAPHY</a>
+                    <div class="bartitle">Javascript</div>
+                    <div class="skillBar">
+                        <div class="barLength"></div>
+                    </div>
+
                 </li>
                 <li>
-                    <a href="#">UX DESIGN</a>
+                    <div class="bartitle">JQuery</div>
+                    <div class="skillBar">
+                        <div class="barLength" style="width: 10%;"></div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="bartitle">Vue.js</div>
+                    <div class="skillBar">
+                        <div class="barLength" style="width: 6%;"></div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="bartitle">React.js</div>
+                    <div class="skillBar">
+                        <div class="barLength" style="width: 5%;"></div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="bartitle">Photoshop</div>
+                    <div class="skillBar">
+                        <div class="barLength" style="width: 85%;"></div>
+                    </div>
+
                 </li>
             </ul>
         </div>
-        <div class="items">
-            <div class="leftItem"></div>
-            <div class="rightItem">
-                <div class="rightTopItem"></div>
-                <div class="rightDownItem"></div>
+    </div>
+
+
+
+
+
+
+    <div class="portfolio">
+        <div class="portfolioTitle"><h2>作品集</h2></div>
+        <div class="category">
+            <ul class="clearfix">
+                <li id="portfolio1">所有</li>
+                <li id="portfolio2">框架</li>
+                <li id="portfolio3">原生JS</li>
+            </ul>
+            <div class="whiteBar">
+                <div id="portfolioBar" class="threeRedBar state1"></div>
             </div>
         </div>
-        <button>查看更多</button>
-    </div>
 
-    <div class="services">
-        <div class="design">
-            <img src="" alt="">
-            <p>DESIGN</p>
-            <p>UI/UX design, Site Architecture</p>
-            <hr>
-            <p>介绍</p>
+        <div class="portfolioPhoto">
+            <div class="photo1"><img src="./img/photo1.jpg" alt=""></div>
+            <div class="photo2"><img src="./img/photo2.jpg" alt=""></div>
+            <div class="photo3"><img src="./img/photo3.jpg" alt=""></div>
         </div>
     </div>
+    <script>
+            portfolio1.onclick = function(){
+                portfolioBar.className= 'threeRedBar state1';
+            }
+            portfolio2.onclick = function(){
+                portfolioBar.className= 'threeRedBar state2';
+            }
+            portfolio3.onclick = function(){
+                portfolioBar.className= 'threeRedBar state3';
+            }
+        
+        </script>
 
-    <div class="workExperience">
-        <div class="item">
-            <div class="time">2014-2016</div>
-            <a href="#">
-                <img src="" alt="">
-            </a>
-            <p>FULL STACK DEVELOPER</p>
-            <p>简介</p>
-        </div>
-    </div>
-
-    <div class="education">
-        <div class="item">
-            <div class="time">2012-2014</div>
-            <div class="school">Master of Information Technology</div>
-        </div>
-    </div>
 
 </body>
 
