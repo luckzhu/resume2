@@ -99,12 +99,14 @@ a {
 .trangle {
     width: 0;
     height: 0;
+    border: 8px solid #e8676b;
     border-right-color:transparent;
     border-bottom-color:transparent;
     border-top-width: 0px; 
     position: absolute;
     left: 10px;
     top: 100%;
+    
 }
 
 .photo {
