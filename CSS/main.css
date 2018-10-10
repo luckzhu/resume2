@@ -48,11 +48,31 @@ a {
     font-weight: 600;
     border-bottom: 3px solid #e8676b transparent;
     padding-bottom: 4px;
+    position: relative;
+    transition: all 0.5s;
 }
 
-.navBar ul li a:hover {
-    border-bottom: 3px solid #e8676b;
-    padding-bottom: 4px;
+.navBar ul li a:hover::after {
+    /* border-bottom: 3px solid #e8676b;
+    padding-bottom: 4px; */
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #e8676b;
+    height: 4px;
+    animation: navSlide 0.5s;
+    
+}
+
+@keyframes navSlide {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 .rs {
