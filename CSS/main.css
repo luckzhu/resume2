@@ -17,6 +17,25 @@ a {
     clear: both;
 }
 
+
+.topNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 1s;
+    color: #b7b7b7;
+}
+
+.topNavBar.sticky {
+    background: white;
+    z-index: 1;
+    box-shadow: 0px 9px 21px -1px rgba(0,0,0,0.91);
+    color: #3d4451;
+    
+}
+
+
 .navBar ul li {
     list-style: none;
     float: left;
@@ -25,7 +44,7 @@ a {
 }
 
 .navBar ul li a {
-    color: #b7b7b7;
+    color: inherit;
     font-weight: 600;
     border-bottom: 3px solid #e8676b transparent;
     padding-bottom: 4px;
@@ -53,6 +72,8 @@ a {
     margin: 30px 17px;
 }
 
+
+
 .navBar {
     float: right;
 }
@@ -64,12 +85,7 @@ a {
     background-position: center center;
 }
 
-.topNavBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
+
 
 .mask {
     height: 515px;

@@ -28,9 +28,9 @@
 
 
     <div class="mainBg">
-        <div class="topNavBar clearfix">
+        <div id="topNavBar" class="topNavBar clearfix">
             <div class="topBar">
-                <a href="#" class="logo">
+                <a id="logo" href="#" class="logo">
                     <span class="rs">RS</span>
                     <span class="card">card</span>
                 </a>
@@ -230,13 +230,18 @@
         }
 
 
-        setTimeout(function(){
+        setTimeout(function () {
             siteLoading.classList.remove('active');
-        },3000)
-
-      
+        }, 1000)
 
 
+        window.onscroll = function (sss) {
+            if (window.scrollY > 0) {
+                topNavBar.classList.add('sticky')
+            } else {
+                topNavBar.classList.remove('sticky')
+            }
+        }
     </script>
 
 
