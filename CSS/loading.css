@@ -1,0 +1,61 @@
+
+.loading {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading.active {
+  display: flex;
+}
+
+
+
+.loading-animation {
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid red; */
+    /* 将圆形动画定位到正中 */
+    position: relative;
+  }
+  
+  .loading-animation::before,
+  .loading-animation::after{
+    content: '';
+    height: 0px;
+    width: 0px;
+    background-color: black;
+    border-radius: 100%;
+    /* 将圆形动画定位到正中 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: dada 2s linear infinite;
+  }
+  
+  .loading-animation::after {
+    animation-delay: 1s;
+  }
+  
+  @keyframes dada {
+    0% {
+      height: 0px;
+      width: 0px;
+      opacity: 1;
+    }
+    100% {
+      height: 100px;
+      width: 100px;
+      opacity: 0;
+    }
+  }

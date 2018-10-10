@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/loading.css">
     <title>zhu-resume</title>
     <script src="//at.alicdn.com/t/font_771967_jy7fohkth2l.js"></script>
     <style type="text/css">
@@ -20,6 +21,12 @@
 </head>
 
 <body>
+
+    <div id="siteLoading" class="loading active">
+        <div class="loading-animation"></div>
+    </div>
+
+
     <div class="mainBg">
         <div class="topNavBar clearfix">
             <div class="topBar">
@@ -191,7 +198,9 @@
 
 
     <div class="portfolio">
-        <div class="portfolioTitle"><h2>作品集</h2></div>
+        <div class="portfolioTitle">
+            <h2>作品集</h2>
+        </div>
         <div class="category">
             <ul class="clearfix">
                 <li id="portfolio1">所有</li>
@@ -210,17 +219,25 @@
         </div>
     </div>
     <script>
-            portfolio1.onclick = function(){
-                portfolioBar.className= 'threeRedBar state1';
-            }
-            portfolio2.onclick = function(){
-                portfolioBar.className= 'threeRedBar state2';
-            }
-            portfolio3.onclick = function(){
-                portfolioBar.className= 'threeRedBar state3';
-            }
-        
-        </script>
+        portfolio1.onclick = function () {
+            portfolioBar.className = 'threeRedBar state1';
+        }
+        portfolio2.onclick = function () {
+            portfolioBar.className = 'threeRedBar state2';
+        }
+        portfolio3.onclick = function () {
+            portfolioBar.className = 'threeRedBar state3';
+        }
+
+
+        setTimeout(function(){
+            siteLoading.classList.remove('active');
+        },3000)
+
+      
+
+
+    </script>
 
 
 </body>
